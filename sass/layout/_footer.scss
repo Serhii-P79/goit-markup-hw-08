@@ -1,0 +1,207 @@
+.page-footer {
+  color: var(--primary-color-footer);
+  background-color: var(--bg-color-footer);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer-address {
+  font-style: normal;
+  @include font-source-sans(14px, 24px);
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.page-footer-address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-footer-address a,
+.page-footer-address a:visited {
+  color: var(--address-color-footer);
+  transition: color var(--var-animation-duration) var(--var-animation-cubic);
+}
+
+.page-footer-address a:hover,
+.page-footer-address a:focus {
+  color: var(--accent-color);
+}
+
+.container-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+.section-footer-1 {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.section-footer-2 {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.section-footer-2 .title {
+  @include font-source-sans(14px, 16px);
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-footer-2 .social-link {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--bg-color-primary);
+
+  transition: background-color var(--var-animation-duration) var(--var-animation-cubic);
+}
+
+.svg-social {
+  width: 20px;
+  height: 20px;
+  /* fill: var(--bg-color-primary); */
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.section-footer-3 {
+  position: relative;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.label-email {
+  display: block;
+
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+
+.form-subscription input {
+  display: block;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 450px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto 20px 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--primary-color-footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  transition: border-color var(--var-animation-duration) var(--var-animation-cubic);
+}
+
+.form-subscription input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-subscription input:focus,
+.form-subscription input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.email-action {
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+/* .form-subscription button:focus-visible {
+  outline: none;
+} */

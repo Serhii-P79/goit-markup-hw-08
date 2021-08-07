@@ -1,0 +1,131 @@
+//============ HEADER ==================
+.page-header {
+  background-color: var(--bg-color-header);
+  border-bottom: 1px solid #ececec;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  /* position: fixed;
+  width: 100%; */
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // &__address {
+  //   font-style: normal;
+
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  // }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  line-height: 0;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: black;
+
+    transition: fill var(--var-animation-duration) var(--var-animation-cubic);
+  }
+
+  :hover,
+  :focus {
+    fill: var(--accent-color);
+  }
+}
+
+/* header address  */
+.address {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: 500;
+  @include font-source-sans(12px, 14px);
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-source-sans(14px, 16px);
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item:nth-child(1) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__link:visited,
+  &__link {
+    color: var(--secondary-text-color);
+    transition: color var(--var-animation-duration) var(--var-animation-cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: var(--secondary-text-color);
+    transition: fill var(--var-animation-duration) var(--var-animation-cubic);
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address {
+    display: none;
+  }
+}

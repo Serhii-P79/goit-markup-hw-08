@@ -1,0 +1,45 @@
+/* цвет основного текста  #212121  */
+/* вторичный цвет текста #757575  */
+/* белый текст #FFFFFF  */
+/* белый 60% прозрачность текст rgba(255, 255, 255, 0.6)  */
+/* акцент текста #2196F3  */
+
+/* background header: #FFFFFF; */
+/* background hero, footer: #2F303A; */
+/* background Наши приоритеты, Чем мы занимаемся: #E5E5E5; */
+/* background Наша команда: #F5F4FA; */
+
+/* 
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Roboto', sans-serif; */
+
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
+  --logo-color-header: #000;
+  --primary-color-footer: #fff;
+  --address-color-footer: rgba(255, 255, 255, 0.6);
+  --text-color-hero: #fff;
+  --text-color-work: #fff;
+
+  --bg-color-header: #fff;
+  --bg-color-card: #fff;
+  --bg-color-footer: #2f303a;
+  --bg-color-hero: #2f303a;
+  --bg-color-primary: #fff;
+  --bg-color-secondary: #f5f4fa;
+  --bg-color-button-hover: #188ce8;
+  --bg-color-social-icon: #afb1b8;
+
+  --card-border-var: 1px solid #eeeeee;
+
+  --card-item-gap: 30px;
+
+  --box-shadow-var: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  --var-animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --var-animation-duration: 250ms;
+}

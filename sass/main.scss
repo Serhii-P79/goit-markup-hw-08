@@ -1,0 +1,32 @@
+// util
+@import "./utils/variables";
+@import "./utils/func";
+@import "./base/common";
+@import "./components/card";
+//header
+@import "./layout/header";
+//nav
+@import "./layout/nav";
+@import "./components/mobile_menu";
+//logo
+@import "./components/logo";
+//hero
+@import "./components/hero";
+//button
+
+@import "./components/button";
+
+//priorities
+@import "./components/priorities";
+//occupation
+@import "./components/occupation";
+//team
+@import "./components/team";
+//@client
+@import "./components/client";
+//portfolio
+@import "./components/portfolio";
+//footer
+@import "./layout/footer";
+//modal window
+@import "./components/modal_window";

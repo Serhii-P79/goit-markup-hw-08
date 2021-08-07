@@ -1,0 +1,51 @@
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  @include font-source-sans(16px, 30px);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: var(--text-color-hero);
+  background-color: var(--accent-color);
+  border: 0px;
+  border-radius: 4px;
+
+  transition: background-color var(--var-animation-duration) var(--var-animation-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-color-button-hover);
+  }
+
+  &:hover .button__icon--animation,
+  &:focus .button__icon--animation {
+    transform: translate(200px, -50px) rotateX(-70deg);
+    opacity: 0;
+  }
+
+  &__icon {
+    position: relative;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-color-footer);
+    opacity: 1;
+
+    transition: transform 700ms var(--var-animation-cubic), opacity 700ms var(--var-animation-cubic);
+  }
+}
+
+.hero__button {
+  align-items: center;
+  text-align: center;
+  padding: 10px 32px;
+}
+
+.form-subscription__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

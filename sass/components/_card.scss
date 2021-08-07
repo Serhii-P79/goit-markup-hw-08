@@ -1,0 +1,37 @@
+.card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item--color {
+    background-color: var(--bg-color-card);
+  }
+
+  &__text {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    fill: var(--bg-color-social-icon);
+
+    transition: fill var(--var-animation-duration) var(--var-animation-cubic),
+      background-color var(--var-animation-duration) var(--var-animation-cubic);
+  }
+}
+
+.card__link {
+  &:hover,
+  &:focus {
+    fill: var(--bg-color-primary);
+    background-color: var(--accent-color);
+  }
+}
